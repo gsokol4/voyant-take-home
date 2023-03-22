@@ -6,21 +6,37 @@ export const StyledNav = styled.nav`
     color: ${({theme}) => {return theme.colors.primaryTextColor}};
     display: flex;
     align-items: center;
-    background-color: purple;
+    background-color: ${({theme}) => {return theme.colors.backHighlight}};
+    gap: 15px;
+
+    .homeLink{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: ${({theme}) => {return theme.colors.primaryTextColor}};
+    }
+
     button{
-        background-color: pink;
+        display: none;
+        background: ${({theme}) => {return theme.colors.secondaryBackgroundColor}};
+        color: ${({theme}) => {return theme.colors.primaryTextColor}};
+        margin-left: auto;
+        margin-right: 40px;
+        min-height: 45px;
+        border-color: ${({theme}) => {return theme.colors.primaryTextColor}};
+        cursor: pointer;
+        border-style: solid;
     }
 
     @media ${devices.mobile}{
-        background-color: red;
     }
     @media ${devices.tablet}{
-        background-color: orange;
     }
     @media ${devices.laptop}{
-        background-color: yellow;
+        button{
+            display: inline-block;
+        }
     }
     @media${devices.desktop}{
-        background-color: green;
     }
 `
