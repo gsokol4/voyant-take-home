@@ -4,7 +4,7 @@ import { ImageContainer, StyledPerson } from './Person.styles'
 function Person () {
     return (
         <>  
-            <ImageContainer props = {{alignSelf: 'flex-start'}}>
+            <ImageContainer alignSelf = {'flex-end'}>
                 < StyledPerson src={largePerson} alt='Teacher' />
             </ImageContainer>
         </>

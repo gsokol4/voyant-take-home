@@ -14,19 +14,21 @@ const StyledPerson = styled.img`
         float: left;
     }
     @media ${devices.tablet}{
+        width: 375px;
     }
     @media ${devices.laptop}{
     }
     @media${devices.desktop}{
     }
 `
-const ImageContainer = styled.div(props)`
-    //position: block;
-    align-self: ${({props}) => {return props.alignSelf}};
-    background: green;
+const ImageContainer = styled.div`
+    display: none;
+    position: block;
+    align-self: ${props => props.alignSelf};
     @media ${devices.mobile}{
     }
     @media ${devices.tablet}{
+        display: block;
     }
     @media ${devices.laptop}{
     }

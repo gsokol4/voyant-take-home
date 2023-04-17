@@ -7,6 +7,7 @@ import GlobalStyles from '../theme+globalStyles/Global.styles'
 import { useEffect, useState } from 'react'
 import Nav from '../components/nav/Nav'
 import CourseHeader from '../components/courseHeader/CourseHeader'
+import CallToAction from '../components/callToAction/CallToAction'
 
 posthog.init('phc_qpt8IKBIV5NujRMT5SYcSQ9zJU1QClrDfFvqirsRkmH', { api_host: 'https://app.posthog.com' })
 
@@ -17,6 +18,7 @@ const IndexPage = () => {
     <GlobalStyles/>
     <Nav/>
     <CourseHeader/>
+    <CallToAction/>
   </ThemeProvider>
   )
 }
