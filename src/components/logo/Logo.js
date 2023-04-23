@@ -1,10 +1,10 @@
 import React from 'react'
-import largeLogo from '../../images/englishSpeechGym50px.png'
-import { StyledLogo } from './Logo.styles'
+import Icon from '../../images/svg-only/assets/voyantLogo.svg'
+import { StyledLogo } from './logo.styles'
 function Logo () {
     return (
         <>
-            < StyledLogo src={largeLogo} alt='English Speech Gym Logo' />
+            <Icon />
         </>
     )
 }

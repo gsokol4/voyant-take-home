@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `top-of-funnel-ads-gatsby`,
+    title: `voyant-take-home`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
@@ -13,5 +13,15 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  },
+  {
+    resolve: 'gatsby-plugin-react-svg',
+    options: {
+      rule: {
+        include: /assets/
+      }
+    }
+  }
+
+]
 };

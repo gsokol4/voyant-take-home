@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { devices } from '../../theme+globalStyles/screenSizes'
+import { devices } from '../../theme-and-global-styles/screenSizes'
 
 export const StyledNav = styled.nav`
     background-color: ${({theme}) => {return theme.colors.primaryBackgroundColor}};

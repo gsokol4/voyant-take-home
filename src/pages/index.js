@@ -1,15 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import posthog from 'posthog-js'
 import { ThemeProvider } from 'styled-components'
-import theme from '../theme+globalStyles/theme'
-import GlobalStyles from '../theme+globalStyles/Global.styles'
-import { useEffect, useState } from 'react'
-import Nav from '../components/nav/Nav'
-import CourseHeader from '../components/courseHeader/CourseHeader'
-import CallToAction from '../components/callToAction/CallToAction'
-
-posthog.init('phc_qpt8IKBIV5NujRMT5SYcSQ9zJU1QClrDfFvqirsRkmH', { api_host: 'https://app.posthog.com' })
+import theme from '../theme-and-global-styles/theme'
+import GlobalStyles from '../theme-and-global-styles/global.styles'
+import Nav from '../components/nav/nav'
 
 
 const IndexPage = () => {
@@ -17,8 +11,6 @@ const IndexPage = () => {
   <ThemeProvider theme={theme}>
     <GlobalStyles/>
     <Nav/>
-    <CourseHeader/>
-    <CallToAction/>
   </ThemeProvider>
   )
 }

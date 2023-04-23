@@ -1,17 +1,17 @@
 import React from 'react'
 
-import {StyledNav} from './Nav.styles'
-import Logo from '../logo/Logo.js'
+import {StyledNav} from './nav.styles'
+import Logo from '../logo/logo.js'
 
 export default function Nav () {
     return (
         <StyledNav>
-            <a href='https://englishspeechgym.com' className='homeLink'>
+            <a href='https://www.planwithvoyant.com/' className='homeLink'>
                 <Logo />
-                <h1>English Speech Gym</h1>
+                <h1>The Doggos of Voyant</h1>
             </a>
-            <section>Complete English Language Course</section>
-            <button>Preview the course</button>
+            <section>puppers</section>
+            <button>delete</button>
         </StyledNav>
     )
 }
