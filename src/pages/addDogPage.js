@@ -4,21 +4,19 @@ import { ThemeProvider } from 'styled-components'
 import theme from '../theme-and-global-styles/theme'
 import GlobalStyles from '../theme-and-global-styles/global.styles'
 import Nav from '../components/nav/nav'
-import Search from '../components/search/search'
-import List from '../components/list/list'
-import Find from '../components/find/find'
+import AddForm from '../components/add-form/addForm'
 
 
-const IndexPage = () => {
+const AddDogPage = () => {
   return (
   <ThemeProvider theme={theme}>
     <GlobalStyles/>
     <Nav/>
-    <Find/>
+    <AddForm/>
   </ThemeProvider>
   )
 }
 
-export default IndexPage
+export default AddDogPage
 
-export const Head = () => <title>The Doggos of Voyant</title>
+export const Head = () => <title>Add your Dog!</title>

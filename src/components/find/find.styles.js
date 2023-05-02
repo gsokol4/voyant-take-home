@@ -1,10 +1,9 @@
 import styled from "styled-components"
-import { devices } from '../../theme-and-global-styles/screenSizes.js'
+import { devices } from '../../theme-and-global-styles/screenSizes'
 
-export const StyledLogo = styled.div`
-width: 175px;
-object-fit: cover;
-margin: 15px 15px 15px 25px;
+export const StyledFind = styled.section`
+    
+    background: pink;
 
     @media ${devices.mobile}{
     }

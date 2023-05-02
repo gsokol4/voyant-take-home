@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { devices } from '../../theme-and-global-styles/screenSizes'
 
 export const StyledNav = styled.nav`
-    background-color: ${({theme}) => {return theme.colors.primaryBackgroundColor}};
     color: ${({theme}) => {return theme.colors.primaryTextColor}};
     display: flex;
     align-items: center;
@@ -17,7 +16,6 @@ export const StyledNav = styled.nav`
     }
 
     button{
-        display: none;
         background: ${({theme}) => {return theme.colors.secondaryBackgroundColor}};
         color: ${({theme}) => {return theme.colors.primaryTextColor}};
         margin-left: auto;
@@ -33,9 +31,6 @@ export const StyledNav = styled.nav`
     @media ${devices.tablet}{
     }
     @media ${devices.laptop}{
-        button{
-            display: inline-block;
-        }
     }
     @media${devices.desktop}{
     }
