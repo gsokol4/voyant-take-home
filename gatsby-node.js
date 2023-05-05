@@ -1,11 +1,12 @@
-const crudProcesses = require("./src/backend/controller/crudProcesses")
-const path = require("path")
+require = require('esm')(module)
+module.exports = require('./gatsby-node.esm.js')
 
-// Implement the Gatsby API “createPages”. This is called once the
-// data layer is bootstrapped to let plugins create pages from data.
-exports.createPages = async ({ graphql, actions, reporter }) => {
+exports.createPages = async ({ actions, reporter }) => {
   const { createPage } = actions
-
-  console.log('hey I am create pages is running')
-  console.log(crudProcesses.getAll())
+  
+  createPage({
+      path: '/test',
+      component: path.resolve('./src/templates/templates.js'),
+      context: {data: 'test'}
+  })
 }
