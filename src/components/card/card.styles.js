@@ -15,12 +15,12 @@ export const StyledCard = styled.section`
         padding: 20px;
         background: ${({theme}) => {return theme.colors.blue}};
         max-width: 230px;
-        overflow: scroll;
+        overflow: hidden;
         overflow-wrap: break-word;
     }
     .card__desc{
         text-align: center;
-        overflow: scroll;
+        overflow: hidden;
 
         max-width: 230px;
     }

@@ -1,5 +1,8 @@
+/*
 require = require('esm')(module)
 module.exports = require('./gatsby-node.esm.js')
+
+
 
 exports.createPages = async ({ actions, reporter }) => {
   const { createPage } = actions
@@ -10,3 +13,4 @@ exports.createPages = async ({ actions, reporter }) => {
       context: {data: 'test'}
   })
 }
+*/
