@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import React from 'react'
-import {StyledEditForm} from './editForm.styles'
-import { crudProcesses } from '../../backend/controller/crudProcesses'
+import {StyledEditForm} from './editForm.styles.js'
+import { crudProcesses } from '../../backend/controller/crudProcesses.js'
 
 export default function EditForm ({data, setItems, setMode}) {
     let [formData, updateFormData] = useState(

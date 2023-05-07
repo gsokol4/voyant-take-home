@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import React from 'react'
-import {StyledAddForm} from './addForm.styles'
-import { crudProcesses } from '../../backend/controller/crudProcesses'
+import {StyledAddForm} from './addForm.styles.js'
+import { crudProcesses } from '../../backend/controller/crudProcesses.js'
 
 export default function AddForm () {
     let [formData, updateFormData] = useState(

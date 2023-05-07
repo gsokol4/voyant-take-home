@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from 'styled-components'
-import theme from '../theme-and-global-styles/theme'
+import theme from '../theme-and-global-styles/theme.js'
 import GlobalStyles from '../theme-and-global-styles/global.styles'
-import Nav from '../components/nav/nav'
-import AddForm from '../components/add-form/addForm'
+import Nav from '../components/nav/nav.js'
+import AddForm from '../components/add-form/addForm.js'
 
 
 const AddDogPage = () => {

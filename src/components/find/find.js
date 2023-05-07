@@ -1,9 +1,9 @@
 import {useState, createContext} from 'react'
 import React from 'react'
-import {StyledFind} from './find.styles'
-import {crudProcesses} from '../../backend/controller/crudProcesses'
-import Search from '../search/search'
-import List from '../list/list'
+import {StyledFind} from './find.styles.js'
+import {crudProcesses} from '../../backend/controller/crudProcesses.js'
+import Search from '../search/search.js'
+import List from '../list/list.js'
 
 const QueryContext = createContext("")
 

@@ -16,7 +16,7 @@ export default [
       owner: "Dave",
       size: "LG",
       description: "An energetic lab that loves to play",
-      id: "test1"
+      id: "doggo1"
     }, 
     {
       name: "Goldie",
@@ -24,7 +24,7 @@ export default [
       owner: "Dave",
       size: "LG",
       description: "Office mommy dog",
-      id: "test2"
+      id: "doggo2"
     }, 
     {
       name: "Gio",
@@ -32,7 +32,7 @@ export default [
       owner: "Dan",
       size: "SM",
       description: "A fluffy terrier mix who runs on treats",
-      id: "test3"
+      id: "doggo3"
     }, 
     {
       name: "Sophie",
@@ -40,7 +40,7 @@ export default [
       owner: "Christina",
       size: "MD",
       description: "A brindled pitbull princess",
-      id: "test4"
+      id: "doggo4"
     }, 
     {
       name: "Taro",
@@ -48,7 +48,7 @@ export default [
       owner: "Sara",
       size: "XL",
       description: "A great pyrenees mix often confused with a horse",
-      id: "test5"
+      id: "doggo5"
     }, 
     {
       name: "Gabby",
@@ -56,7 +56,7 @@ export default [
       owner: "Dan",
       size: "MD",
       description: "A tutu-flaunting American bulldog/pitbull mix",
-      id: "test6"
+      id: "doggo6"
     }, 
     {
       name: "Percy",
@@ -64,7 +64,7 @@ export default [
       owner: "Monica",
       size: "LG",
       description: "A wolf-sized pup with piercing blue eyes",
-      id: "test7"
+      id: "doggo7"
     },
     {
       name: "Benny",
@@ -72,7 +72,7 @@ export default [
       owner: "Brandon",
       size: "MD",
       description: "A belly-rub loving hound-mix",
-      id: 'test8'
+      id: 'doggo8'
     },
     {
       name: "Baxter",
@@ -80,7 +80,7 @@ export default [
       owner: "Skip",
       size: "XS",
       description: "The eldest, wisest, and tiniest dog of the office",
-      id: 'test9'
+      id: 'doggo9'
     },
     {
       name: "Vyla",
@@ -88,6 +88,6 @@ export default [
       owner: "Skip",
       size: "SM",
       description: "The resident toy and bone hoarder",
-      id: "test10"
+      id: "doggo10"
     },
   ];

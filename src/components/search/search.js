@@ -1,8 +1,6 @@
-import {useState} from 'react'
 import React from 'react'
-import {StyledSearch} from './search.styles'
-import {crudProcesses} from '../../backend/controller/crudProcesses'
-import AddForm from '../add-form/addForm'
+import {StyledSearch} from './search.styles.js'
+import {crudProcesses} from '../../backend/controller/crudProcesses.js'
 
 export default function Search ({query, setQuery, setItems}) {
     function handleSubmit(e){

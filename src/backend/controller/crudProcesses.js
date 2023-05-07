@@ -1,5 +1,5 @@
-import model from '../model/model'
-import validateObject from './validateObject'
+import model from '../model/model.js'
+import validateObject from './validateObject.js'
 
 // todo make this class more reusable by moving all type checks into it's own file and and passing them as properties
 
@@ -62,8 +62,13 @@ class CrudProcesses{
 
     /*
         not this is not a very effcient search the time complexity is x^(2 )
-        I did this as a design desc
-        ision since the data base is so small
+        I did this as a design choice since I wanted to search through all of the keys with my search
+        if the app were to grow I would have to look at a more scalable way to make this function
+        
+        more scalable ways to do this could include using a map for key property which would trade space for 
+        time complexity. introduction of another type of database could be another way to do this.
+
+        since the data base is so small this function works with no noticeable impact on the user for the moment
     */
     searchAll(query){
         const filtered = model.filter((obj) =>{

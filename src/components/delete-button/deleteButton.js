@@ -1,8 +1,8 @@
 import {useContext} from 'react'
 import React from 'react'
-import {StyledDeleteButton} from './deleteButton.styles'
-import {crudProcesses} from '../../backend/controller/crudProcesses'
-import {QueryContext} from '../find/find'
+import {StyledDeleteButton} from './deleteButton.styles.js'
+import {crudProcesses} from '../../backend/controller/crudProcesses.js'
+import {QueryContext} from '../find/find.js'
 
 
 export default function DeleteButton ({id, setItems}) {

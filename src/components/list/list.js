@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
-import {StyledList} from './list.styles'
-import Card from '../card/card'
+import {StyledList} from './list.styles.js'
+import Card from '../card/card.js'
 
 export default function List ({items, setItems}) {
     let [mode, setMode] = useState(false)

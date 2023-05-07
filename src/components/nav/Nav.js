@@ -1,14 +1,14 @@
 import React from 'react'
-import {StyledNav} from './nav.styles'
+import {StyledNav} from './nav.styles.js'
 import Logo from '../logo/logo.js'
 import { Link } from "gatsby"
 
 export default function Nav () {
     return (
         <StyledNav>
-            <a href='/' className='homeLink'>
+            <Link to='/' className='homeLink'>
                 <Logo />
-            </a>
+            </Link>
             <Link className='nav__home-link' to='/'>
                 <h1>The Doggos of Voyant</h1>
                 <section>puppers at work</section>

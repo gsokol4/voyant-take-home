@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { devices } from '../../theme-and-global-styles/screenSizes'
+import { devices } from '../../theme-and-global-styles/screenSizes.js'
 
 export const StyledSearch = styled.section`
     

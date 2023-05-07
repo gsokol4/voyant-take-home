@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import {StyledCard} from './card.styles'
-import DeleteButton from '../delete-button/deleteButton'
-import EditButton from '../edit-button/editButton'
-import EditForm from '../edit-form/editForm'
+import {StyledCard} from './card.styles.js'
+import DeleteButton from '../delete-button/deleteButton.js'
+import EditButton from '../edit-button/editButton.js'
+import EditForm from '../edit-form/editForm.js'
 
 export default function Card ({items, setItems, obj, index}) {
     let [mode, setMode] = useState(false)
