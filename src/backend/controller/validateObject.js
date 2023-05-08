@@ -1,9 +1,12 @@
-export default function validateObject(object){
-    
-    for (const [key, value] of Object.entries(object)) {
-        if(typeof(value)!== 'string'){throw new Error(`the type of ${key} was expected to be a string but it was a ${typeof(value)}`)}
+export default function validateObject(object) {
+  for (const [key, value] of Object.entries(object)) {
+    if (typeof value !== "string") {
+      throw new Error(
+        `the type of ${key} was expected to be a string but it was a ${typeof value}`
+      );
     }
-        /*
+  }
+  /*
         I considered adding some form of dom purification here to validate inputs from this function>
         This helps prevent XSS attacks
         It is not really needed here since every thing is on the front end and they are only

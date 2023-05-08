@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { devices } from '../../theme-and-global-styles/screenSizes.js'
+import styled from "styled-components";
+import { devices } from "../../theme-and-global-styles/screenSizes.js";
 
 export const StyledEditForm = styled.section`
   display: flex;
@@ -8,53 +8,67 @@ export const StyledEditForm = styled.section`
   align-items: center;
   justify-content: center;
   padding: 100px, 0px;
-    .edit_form__form{
-      background: ${({theme}) => {return theme.colors.cyan}};
-      border-radius: 20px;
-      
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-      justify-content: center;
-    }
-    .edit_form__label{
-      color: ${({theme}) => {return theme.colors.white}};
-      text-align: center;
-    }
+  .edit_form__form {
+    background: ${({ theme }) => {
+      return theme.colors.cyan;
+    }};
+    border-radius: 20px;
 
-    button{
-      color: ${({theme}) => {return theme.colors.white}};
-      border-color: ${({theme}) => {return theme.colors.white}};
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .edit_form__label {
+    color: ${({ theme }) => {
+      return theme.colors.white;
+    }};
+    text-align: center;
+  }
 
-    button:hover{
-        animation-name: jump;
-        animation-duration: .5s;
-        animation-iteration-count: infinite;
-        color: ${({theme}) => {return theme.colors.green}};
-        background: ${({theme}) => {return theme.colors.white}};
-        border-color: ${({theme}) => {return theme.colors.green}};
-    }
+  button {
+    color: ${({ theme }) => {
+      return theme.colors.white;
+    }};
+    border-color: ${({ theme }) => {
+      return theme.colors.white;
+    }};
+  }
 
-    @keyframes jump {
-        0% {
-            transform: translate(1px, 1px)
-        }
-        50% {
-            transform: translate(-1px, -1px)
-        }
-        100% {
-            transform: translate(0px, 0px)
-        }
-    }
+  button:hover {
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    color: ${({ theme }) => {
+      return theme.colors.green;
+    }};
+    background: ${({ theme }) => {
+      return theme.colors.white;
+    }};
+    border-color: ${({ theme }) => {
+      return theme.colors.green;
+    }};
+  }
 
-    @media ${devices.mobile}{
+  @keyframes jump {
+    0% {
+      transform: translate(1px, 1px);
     }
-    @media ${devices.tablet}{
+    50% {
+      transform: translate(-1px, -1px);
     }
-    @media ${devices.laptop}{
+    100% {
+      transform: translate(0px, 0px);
     }
-    @media${devices.desktop}{
-    }
-`
+  }
+
+  @media ${devices.mobile} {
+  }
+  @media ${devices.tablet} {
+  }
+  @media ${devices.laptop} {
+  }
+  @media${devices.desktop} {
+  }
+`;
