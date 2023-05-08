@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { devices } from '../../theme-and-global-styles/screenSizes.js'
+import styled from "styled-components";
+import { devices } from "../../theme-and-global-styles/screenSizes.js";
 
 export const StyledAddForm = styled.section`
     display: flex;
@@ -8,8 +8,12 @@ export const StyledAddForm = styled.section`
     align-items: center;
     padding: 50px;
     margin: 24px;
-    background: ${({theme}) => {return theme.colors.teal}};
-    color: ${({theme}) => {return theme.colors.white}};
+    background: ${({ theme }) => {
+      return theme.colors.teal;
+    }};
+    color: ${({ theme }) => {
+      return theme.colors.white;
+    }};
     .add_form__title{
       
     }
@@ -32,23 +36,41 @@ export const StyledAddForm = styled.section`
       height: 75px;
       font-size: 1.25em;
       cursor: pointer;
-      background: ${({theme}) => {return theme.colors.white}};
-      color: ${({theme}) => {return theme.colors.green}};
-      border-color: ${({theme}) => {return theme.colors.green}};
+      background: ${({ theme }) => {
+        return theme.colors.white;
+      }};
+      color: ${({ theme }) => {
+        return theme.colors.green;
+      }};
+      border-color: ${({ theme }) => {
+        return theme.colors.green;
+      }};
     }
     .add_form__button:hover{
         animation-name: spin;
         animation-duration: 5s;
         animation-iteration-count: infinite;
-        color: ${({theme}) => {return theme.colors.green}};
-        background: ${({theme}) => {return theme.colors.white}};
-        border-color: ${({theme}) => {return theme.colors.green}};
+        color: ${({ theme }) => {
+          return theme.colors.green;
+        }};
+        background: ${({ theme }) => {
+          return theme.colors.white;
+        }};
+        border-color: ${({ theme }) => {
+          return theme.colors.green;
+        }};
     }
 
     .add_form__button:active{
-        color: ${({theme}) => {return theme.colors.white}};
-        background: ${({theme}) => {return theme.colors.green}};
-        border-color: ${({theme}) => {return theme.colors.white}};
+        color: ${({ theme }) => {
+          return theme.colors.white;
+        }};
+        background: ${({ theme }) => {
+          return theme.colors.green;
+        }};
+        border-color: ${({ theme }) => {
+          return theme.colors.white;
+        }};
     }
 
     @keyframes spin {
@@ -79,4 +101,4 @@ export const StyledAddForm = styled.section`
     }
 
   */
-`
+`;

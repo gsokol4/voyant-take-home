@@ -18,6 +18,6 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 20px;
         background: transparent;
     }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

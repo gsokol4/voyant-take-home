@@ -1,12 +1,12 @@
-import React from 'react'
-import Icon from '../../images/svg-only/assets/editIcon.svg'
-import { StyledIcon, StyledLogo } from './editIcon.styles.js'
-function EditIcon () {
-    return (
+import React from "react";
+import Icon from "../../images/svg-only/assets/editIcon.svg";
+import { StyledIcon } from "./editIcon.styles.js";
+function EditIcon() {
+  return (
     <StyledIcon>
-        <Icon />
+      <Icon />
     </StyledIcon>
-    )
+  );
 }
 
-export default EditIcon
+export default EditIcon;
