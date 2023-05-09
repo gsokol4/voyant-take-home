@@ -11,11 +11,12 @@ export default function EditForm({ data, setItems, setMode }) {
     size: `${data.size}`,
     description: `${data.description}`,
     id: `${data.id}`,
+    url: `${data.url}`,
   });
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    crudProcesses.editObject(data.id, formData);
+    await crudProcesses.editObject(data, formData);
     setItems([...crudProcesses.getAll()]);
     setMode(!true);
   }
@@ -24,6 +25,18 @@ export default function EditForm({ data, setItems, setMode }) {
     <StyledEditForm>
       <h1 className="edit_form__title">Edit {formData.name}</h1>
       <form className="edit_form__form" onSubmit={handleSubmit}>
+        <label className="edit_form__label" aria-label="dog name label">
+          {" "}
+          URL to image of Dog
+          <input
+            type="text"
+            value={formData.url}
+            onChange={(e) =>
+              updateFormData({ ...formData, url: e.target.value })
+            }
+            aria-label="url for profile image input box"
+          />
+        </label>
         <label className="edit_form__label" aria-label="dog name label">
           {" "}
           Dog's Name

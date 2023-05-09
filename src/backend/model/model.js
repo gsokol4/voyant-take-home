@@ -17,6 +17,7 @@ const model = [
     size: "LG",
     description: "An energetic lab that loves to play",
     id: "doggo1",
+    url: "https://www.upworthy.com/media-library/less-than-p-greater-than-a-sad-looking-labrador-retriever-less-than-p-greater-than.jpg?id=33297188",
   },
   {
     name: "Goldie",
@@ -25,6 +26,7 @@ const model = [
     size: "LG",
     description: "Office mommy dog",
     id: "doggo2",
+    url: "https://www.sugarthegoldenretriever.com/wp-content/uploads/2019/06/take-your-dog-to-work-day.jpg",
   },
   {
     name: "Gio",
@@ -33,6 +35,7 @@ const model = [
     size: "SM",
     description: "A fluffy terrier mix who runs on treats",
     id: "doggo3",
+    url: "https://thesmartcanine.com/wp-content/uploads/2019/04/whoodle-terrier-mix-1024x742.jpg",
   },
   {
     name: "Sophie",
@@ -41,6 +44,7 @@ const model = [
     size: "MD",
     description: "A brindled pitbull princess",
     id: "doggo4",
+    url: "https://www.allthingsdogs.com/wp-content/uploads/2019/02/Brindle-Pitbull-Feature.jpg",
   },
   {
     name: "Taro",
@@ -49,6 +53,7 @@ const model = [
     size: "XL",
     description: "A great pyrenees mix often confused with a horse",
     id: "doggo5",
+    url: "https://www.aspca.org/sites/default/files/blog_horse-code-part-one_011922_main.jpg",
   },
   {
     name: "Gabby",
@@ -57,6 +62,7 @@ const model = [
     size: "MD",
     description: "A tutu-flaunting American bulldog/pitbull mix",
     id: "doggo6",
+    url: "https://i.pinimg.com/originals/00/3d/e9/003de9062ec9a82b5b51d1c707264db1.jpg",
   },
   {
     name: "Percy",
@@ -65,6 +71,7 @@ const model = [
     size: "LG",
     description: "A wolf-sized pup with piercing blue eyes",
     id: "doggo7",
+    url: "https://a-z-animals.com/media/2022/05/Why-Do-Siberian-Huskies-Have-Blue-Eyes-header.jpg",
   },
   {
     name: "Benny",
@@ -73,6 +80,7 @@ const model = [
     size: "MD",
     description: "A belly-rub loving hound-mix",
     id: "doggo8",
+    url: "https://media.tenor.com/6Zbxt9ZMN24AAAAM/hound-fox.gif",
   },
   {
     name: "Baxter",
@@ -81,6 +89,7 @@ const model = [
     size: "XS",
     description: "The eldest, wisest, and tiniest dog of the office",
     id: "doggo9",
+    url: "https://www.loveyourdog.com/wp-content/uploads/2020/04/Chihuahua-Relaxing-Indoors-900x500.jpg.webp",
   },
   {
     name: "Vyla",
@@ -89,6 +98,7 @@ const model = [
     size: "SM",
     description: "The resident toy and bone hoarder",
     id: "doggo10",
+    url: "https://patchpuppy.com/wp-content/uploads/2021/06/LionCut.jpg",
   },
 ];
 

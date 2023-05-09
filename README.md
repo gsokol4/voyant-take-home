@@ -1,7 +1,7 @@
 Profiles App
 This app is a CRUD (create, read, update, delete) application built with Gatsby.js, Styled Components, and React. The primary pattern for data is MVC, with a focus on the view layer. The app contains dog profiles/cards that can be created, read, updated, and deleted.
 
-to see the live version of this please checkout 
+to see the live version of this please checkout
 https://voyant-take-home-dogs.onrender.com/
 
 Features
@@ -24,4 +24,3 @@ View, edit, or delete an existing dog profile/card by clicking on the correspond
 Have fun exploring and managing your dog profiles!
 Credits
 This app was created by Gabriel Sokol as part of a job application. Thank you to the reviewers for your time and consideration!
-
