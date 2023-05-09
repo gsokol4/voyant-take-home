@@ -11,6 +11,7 @@ export default function AddForm() {
     size: "LG",
     description: "",
     id: "",
+    url: "",
   });
 
   function handleSubmit(e) {
@@ -22,6 +23,19 @@ export default function AddForm() {
     <StyledAddForm>
       <h1 className="add_form__title">Add a Dog</h1>
       <form className="add_form__form" onSubmit={handleSubmit}>
+        <label className="add_form__label" aria-label="dog url upload">
+          {" "}
+          Url to profile image
+          <input
+            type="text"
+            value={formData.url}
+            onChange={(e) =>
+              updateFormData({ ...formData, url: e.target.value })
+            }
+            aria-label="Dog url profile image input box"
+          />
+        </label>
+
         <label className="add_form__label" aria-label="dog name label">
           {" "}
           Dog's Name

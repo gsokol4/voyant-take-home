@@ -1,8 +1,6 @@
 import model from "../model/model.js";
 import validateObject from "./validateObject.js";
 
-// todo make this class more reusable by moving all type checks into it's own file and and passing them as properties
-
 class CrudProcesses {
   constructor(validateObject) {
     this.validateObject = validateObject;
@@ -23,7 +21,7 @@ class CrudProcesses {
   }
 
   makeUniqueId(prop = "doggo") {
-    return `${prop}${new Date().getTime()}`;
+    return `${prop}${new Date().getTime()}-${this.randomNumberGen()}`;
   }
 
   getAll() {
@@ -31,9 +29,10 @@ class CrudProcesses {
     return model;
   }
 
-  addObject(object, prop) {
+  async addObject(object, prop) {
     this.validateObject(object);
     object.id = this.makeUniqueId(prop);
+    object.url = await this.urlCheck(object.url);
     model.push(object);
   }
 
@@ -41,14 +40,14 @@ class CrudProcesses {
     return model.indexOf(model.find((obj) => obj.id === id));
   }
 
-  editObject(id, newObject) {
+  async editObject(oldObject, newObject) {
     this.validateObject(newObject);
     this.typeCheckModel();
-
-    let index = this.getIndexById(id);
+    let index = this.getIndexById(oldObject.id);
     if (index === -1) {
       console.error("the requested id does not exist exist in the array");
     } else {
+      newObject.url = await this.urlCheck(newObject.url, oldObject.url);
       model[index] = newObject;
     }
   }
@@ -67,14 +66,16 @@ class CrudProcesses {
   }
 
   /*
-        not this is not a very effcient search the time complexity is x^(2 )
+        note
+        This search all function is not very efficient
+        this is not a very efficient search the time complexity is x^(2)
         I did this as a design choice since I wanted to search through all of the keys with my search
         if the app were to grow I would have to look at a more scalable way to make this function
         
         more scalable ways to do this could include using a map for key property which would trade space for 
         time complexity. introduction of another type of database could be another way to do this.
 
-        since the data base is so small this function works with no noticeable impact on the user for the moment
+        since the data base is so small this function works with no noticeable impact on the user
     */
   searchAll(query) {
     const filtered = model.filter(function (obj) {
@@ -94,6 +95,32 @@ class CrudProcesses {
 
   random() {
     return model[Math.floor(Math.random() * model.length)];
+  }
+
+  randomNumberGen() {
+    return Math.floor(Math.random() * 1000);
+  }
+
+  async urlCheck(url, oldUrl) {
+    const defaultImage =
+      "https://png.pngitem.com/pimgs/s/1-16873_dog-head-profile-clip-art-wolf-head-silhouette.png";
+    if (url === "") {
+      return defaultImage;
+    }
+    if (oldUrl === url) {
+      return oldUrl;
+    }
+    try {
+      const valid = await fetch(url);
+      if (!valid.ok) {
+        return defaultImage;
+      } else {
+        return url;
+      }
+    } catch (e) {
+      console.error(e);
+      return defaultImage;
+    }
   }
 }
 

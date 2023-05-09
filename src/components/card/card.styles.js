@@ -6,7 +6,7 @@ export const StyledCard = styled.section`
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     border: 1px solid black;
     border-radius: 5%;
